@@ -1,0 +1,236 @@
+/* Global Styles
+-------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+   box-sizing: inherit;
+}
+body{
+color: #343434;
+margin: 0;
+padding: 0;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+line-height: 1.5;
+}
+
+
+
+/* Nav Bar
+-------------------------------*/
+
+ 
+.nav ul {                                   /*This section styles the unordered list which will become the menu*/
+    text-align: left;                    /*align text within menu to the left*/
+    list-style:none;                   /*get rid of the styling (i.e. bullets) in the list*/
+    }
+  
+   .nav ul li {                                 /*This section styles the list items (i.e. menu items) */
+font: bold 18px Source Sans Pro; /*change the font size and type*/
+    display: inline-block;            /*display list items in one line (makes list horizontal)*/
+    position: relative;                /*Will allow submenus to move, letting them open immediately below the different menu items (i.e. a location on the screen relative to the menu item chosen) */
+    padding: 15px 20px;           /*Add padding around the text*/
+    background: #fff;              /*Change background color of the menu items*/
+    cursor: pointer;                  /*Change the mouse cursor to a pointer even if the text is not a link (useful for dropdown menus)*/
+    }
+   .nav ul li:hover {                        /*This section styles the menu items when hovered (rolled) over*/
+    background: rgb(253, 95, 95);             /*Change the background color of list item when hovered over*/
+    color: #fff;                        /*Change the color of the text when hovered over*/
+    }
+ 
+
+
+
+h1, h2{
+    font-family: 'Satisfy', cursive;
+    font-weight: 300;
+    margin: 10px;
+    text-align: center;
+    
+}
+h3 {
+    text-align: center;
+    font-size: 46px;
+}
+
+h1 { 
+    font-size: 75px;
+}
+h2 {
+    
+    font: size 60px; 
+   text-align: center
+;
+}
+
+.content-wrap{
+  max-width: 800px;
+  width: 80%;
+    margin: 0 auto;
+    
+    padding: 65px ;
+}
+
+
+
+
+
+img{ 
+    width: 400px;
+}
+
+a {
+    color: rgb(226, 142, 32);
+}
+
+
+/* Profile Styles
+-------------------------------*/
+header{
+    background-color: orange;
+    color: white;
+}
+
+.profile {
+    float:left
+
+
+}
+
+
+/* Sketches Styles
+-------------------------------*/
+
+.container {
+margin-top: 100px;
+
+}
+.creative {
+    align-items: center;
+
+}
+
+.sk1 {
+    height: 400px;
+
+}
+
+.grid-container1 {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto;
+border-bottom: 2px dashed lightgray;
+padding: 75px;
+    
+}
+
+.grid-item1 {
+    
+    margin-left: 80px;
+}
+
+
+
+/* Sketches Styles
+-------------------------------*/
+
+.container {
+    margin-top: 100px;
+    
+    }
+    .creative {
+        align-items: center;
+    
+    }
+    
+    .sk1 {
+        height: 400px;
+    
+    }
+    
+    .grid-container1 {
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: auto auto;
+    border-bottom: 2px dashed lightgray;
+    padding: 75px;
+        
+    }
+    
+    .grid-item {
+        
+        margin-left: 80px;
+    }
+    
+    .grid-container2 {
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+   .sk2 { 
+    max-height: 350px;
+   }
+.grid-item2 {
+    padding: 25px;
+    gap: 50px;
+}
+
+
+
+/* Contact Info Styles
+-------------------------------*/
+
+footer{
+    background: #343434;
+    color: white;
+   
+}
+.contactinfo {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  
+}
+.contactinfo a {
+    padding: 15px;
+    display: inline-block;
+
+}
+
+/* Responsive
+-------------------------------*/
+@media screen and (min-width: 750px){
+    header, footer {
+        text-align: center;
+    }
+
+.container img {
+    float: left;
+    margin-right: 20px;
+
+}
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+column-gap: 20px;
+}  
+.contactinfo {
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 749px){
+h1 { 
+    font-size: 75px;
+    line-height: 0.9;
+}
+h2 {
+    line-height: 1;
+}
+.contactinfo a {
+    padding: 5px;
+}
+}
